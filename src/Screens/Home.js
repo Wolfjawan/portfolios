@@ -35,7 +35,7 @@ class Home extends Component {
           I would like to use the latest technology to solve real problems in
           AI, Robotics and Health sector
         </p>
-        <div className="d-flex">
+        <div>
           <div className="m-3">
             <h1>Experience</h1>
             <p>

@@ -1,16 +1,22 @@
 export const scrollAnimation = () => {
   const navbar = document.getElementsByClassName("navbar")[0];
-  const navbarCollapse = document.getElementsByClassName("navbar-collapse")[0];
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    if (navbar) navbar.style.height = "20px";
-    if (
-      navbarCollapse &&
-      navbar.offsetWidth / 1.6 > document.documentElement.scrollTop * 3
-    )
-      navbarCollapse.style.paddingLeft = `${document.documentElement.scrollTop *
-        3}px`;
+  const main = document.getElementsByClassName("main")[0];
+  var h = window.innerHeight;
+  var w = window.innerWidth;
+  if (
+    document.body.scrollTop > 80 ||
+    document.documentElement.scrollTop > 80 + h
+  ) {
+    if (navbar) navbar.style.height = w > 1000 ? "25px" : "fit-content";
   } else {
-    if (navbar) navbar.style.height = "40px";
-    if (navbarCollapse) navbarCollapse.style.paddingLeft = "0px";
+    if (navbar) navbar.style.height = w > 1000 ? "40px" : "fit-content";
+  }
+  //navbar position
+  if (h <= document.documentElement.scrollTop) {
+    if (navbar) navbar.style.position = "fixed";
+    if (main) main.style.marginTop = "40px";
+  } else {
+    if (navbar) navbar.style.position = "relative";
+    if (main) main.style.marginTop = "0px";
   }
 };
