@@ -4,7 +4,7 @@ import { applyAnimation } from "./AnimateText";
 import "./index.css";
 const text = messages[Math.floor(Math.random() * messages.length)];
 class Index extends Component {
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     setTimeout(() => {
       applyAnimation("MESSAGE");
     }, 100 * text.length);

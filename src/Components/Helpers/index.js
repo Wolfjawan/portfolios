@@ -20,3 +20,4 @@ export const scrollAnimation = () => {
     if (main) main.style.marginTop = "0px";
   }
 };
+

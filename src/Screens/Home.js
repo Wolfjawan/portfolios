@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Home extends Component {
   render() {
     return (
-      <div className="markdown-body entry-content pl-5 pr-5" itemprop="text">
+      <div className="markdown-body entry-content pl-5 pr-5">
         <h1>Mohsen Moradi</h1>
         <p>
           T: 07402120069 / E:{" "}

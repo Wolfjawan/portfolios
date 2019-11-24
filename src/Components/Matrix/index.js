@@ -1,14 +1,28 @@
 import React from "react";
-import SingleLine from "./SingleLine";
-import "./index.css";
 import _ from "lodash";
-let w = window.innerWidth;
-const Matrix = () => (
-  <div className="Matrix">
-    {_.times(w/60).map(i => (
-      <SingleLine key={i} />
-    ))}
-  </div>
-);
+import { oppositeNumber, shuffle, symbols } from "./Helper";
+import "./index.css";
 
+let w = window.innerWidth;
+
+const timesMatrix = () => {
+  const matrix = [];
+  var i;
+  for (i = 0; i < w / 50; i++) {
+    const fontSize = _.random(10, 40);
+    matrix.push(
+      <pre
+        style={{
+          fontSize: `${fontSize}px`,
+          animationDelay: `${fontSize / 10}s`,
+          animationDuration: `${oppositeNumber(fontSize) + 10}s`
+        }}
+      >
+        {shuffle(symbols)}<span>X</span>
+      </pre>
+    );
+  }
+  return matrix;
+};
+const Matrix = () => <section className="matrix">{timesMatrix()}</section>;
 export default Matrix;
