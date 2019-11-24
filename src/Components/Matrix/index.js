@@ -18,11 +18,11 @@ const timesMatrix = () => {
           animationDuration: `${oppositeNumber(fontSize) + 10}s`
         }}
       >
-        {shuffle(symbols)}<span>X</span>
+        {shuffle(symbols)}
+        <span>X</span>
       </pre>
     );
   }
   return matrix;
 };
-const Matrix = () => <section className="matrix">{timesMatrix()}</section>;
-export default Matrix;
+export default () => <section className="matrix">{timesMatrix()}</section>;
