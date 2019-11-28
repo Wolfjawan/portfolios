@@ -1,4 +1,5 @@
 .matrix {
+  /* background-color: black; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -7,31 +8,16 @@
   left: 0;
 }
 pre {
-  color: #00e932;
   width: fit-content;
   overflow: hidden;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
-  letter-spacing: 0.3rem;
-  word-spacing: 1rem;
   writing-mode: vertical-rl;
-  -webkit-text-orientation: upright;
-  -moz-text-orientation: upright;
   text-orientation: upright;
   transform: translatey(-100%);
-  animation: matrix linear 30s infinite;
+  animation: matrix linear 100s infinite;
 }
-pre span {
-  animation: color 1s infinite;
-}
-@keyframes color {
-  0%{
-   color: #00b300
-  }
-  100%{
-    color: #5bff5b
-   }
-}
+
 @keyframes matrix {
   100% {
     transform: translatey(100%);

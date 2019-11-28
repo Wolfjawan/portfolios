@@ -1,0 +1,44 @@
+.mohsen-experience {
+  padding: 50px 0px;
+}
+.mohsen-experience li {
+  font-size: 18px;
+  text-align: justify;
+}
+.mohsen-experience h1 {
+  padding-top: 15px;
+  text-align: justify;
+}
+.mohsen-experience h2 {
+  text-align: justify;
+  padding-left: 10px;
+  border-left: 6px solid #00e932;
+  border-bottom: 0.1px solid #00e9322a;
+}
+.mohsen-experience-images {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.mohsen-experience-images a {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  cursor: zoom-in;
+  opacity: 0.75;
+}
+.mohsen-experience-images a:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 990px) {
+  .mohsen-experience {
+    padding: 70px 0px;
+  }
+  .mohsen-experience-images {
+    padding: 0px;
+    display: block;
+  }
+  .mohsen-experience-images a {
+    padding: 0;
+  }
+}

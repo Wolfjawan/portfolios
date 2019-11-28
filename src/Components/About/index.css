@@ -1,0 +1,44 @@
+.about-mohsen {
+  padding: 50px 0px;
+}
+.about-mohsen p {
+  font-size: 18px;
+  text-align: justify;
+}
+.about-mohsen h1 {
+  padding-top: 15px;
+  text-align: justify;
+}
+.about-mohsen h2 {
+  text-align: justify;
+  padding-left: 10px;
+  border-left: 6px solid #00e932;
+  border-bottom: 0.1px solid #00e9322a;
+}
+.about-mohsen-images {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-mohsen-images a {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  cursor: zoom-in;
+  opacity: 0.75;
+}
+.about-mohsen-images a:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 990px) {
+  .about-mohsen {
+    padding: 70px 0px;
+  }
+  .about-mohsen-images {
+    padding: 0px;
+    display: block;
+  }
+  .about-mohsen-images a {
+    padding: 0;
+  }
+}

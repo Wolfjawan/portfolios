@@ -40,7 +40,7 @@ class TopPage extends Component {
           }}
         >
           <div className="terminal-nav">
-            <p className="ml-2 text-success">Terminal</p>
+            <p className="ml-2 text-success">Terminal: home/mohsen</p>
             <div className="terminal-nav-items">
               <i className="fas fa-window-minimize text-success"></i>
               <i className="far fa-window-maximize text-success"></i>
@@ -67,12 +67,16 @@ class TopPage extends Component {
             <div className="second-message-container">
               <h3>
                 Hello, this is
-                <strong className="text-success"> Mohsen Moradi</strong>.
+                <a href="#about" className="text-success font-weight-bold">
+                  {" "}
+                  Mohsen Moradi
+                </a>
+                .
                 <br /> He is a full-stock web-developer.
               </h3>
               <span className="view-work-btn">
-                <a href="#navbar" className="btn btn-outline-success btn-lg">
-                  View his Work
+                <a href="#about" className="btn btn-outline-success btn-lg">
+                  View Mohsen Moradi
                   <i className="fas fa-arrow-down pl-2" />
                 </a>
               </span>

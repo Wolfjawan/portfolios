@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routs";
+// import Matrix from "./Components/Matrix";
 import "./App.css";
+
 export default () => {
   return (
-    <Router>
+    <div>
+      {/* <Matrix /> */}
       <Routes />
-    </Router>
+    </div>
   );
 };

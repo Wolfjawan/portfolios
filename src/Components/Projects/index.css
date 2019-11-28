@@ -1,0 +1,125 @@
+.mohsen-projects {
+  padding: 50px 0px;
+}
+.mohsen-projects h1 {
+  padding-top: 15px;
+  text-align: justify;
+}
+.mohsen-projects h5,
+.mohsen-projects h2 {
+  text-align: justify;
+  padding-left: 4px;
+  border-left: 6px solid #00e932;
+  border-bottom: 0.1px solid #00e93271;
+}
+.mohsen-projects-images {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mohsen-projects-box img,
+.mohsen-projects-box:after,
+.mohsen-projects-box:before {
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  opacity: 0.9;
+}
+.mohsen-projects-box-container {
+  padding: 20px;
+}
+
+.mohsen-projects-box:after,
+.mohsen-projects-box:before {
+  content: "";
+}
+.mohsen-projects-box {
+  overflow: hidden;
+}
+.mohsen-projects-box span {
+  letter-spacing: 1px;
+}
+.mohsen-projects-box .icon,
+.mohsen-projects-box span {
+  margin: 0;
+  position: absolute;
+}
+
+.mohsen-projects-box span li {
+  list-style: none;
+}
+.mohsen-projects-box {
+  position: relative;
+}
+.mohsen-projects-box:after,
+.mohsen-projects-box:before {
+  height: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform-origin: 100% 0;
+  transform: rotateZ(90deg);
+}
+.mohsen-projects-box:after {
+  top: auto;
+  bottom: 0;
+  transform-origin: 0 100%;
+}
+.mohsen-projects-box:hover:after,
+.mohsen-projects-box:hover:before {
+  transform: rotateZ(0);
+}
+.mohsen-projects-box span {
+  text-transform: uppercase;
+  top: 10px;
+  left: 10px;
+  opacity: 0;
+  z-index: 2;
+  transform: scale(0);
+  transition: all 0.5s ease 0.2s;
+}
+.mohsen-projects-box:hover span {
+  opacity: 1;
+  transform: scale(1);
+}
+.mohsen-projects-box .icon {
+  padding: 8px;
+  list-style: none;
+  background: #666666;
+  top: -100%;
+  right: 0;
+  height: fit-content;
+  z-index: 2;
+  transition: all 0.3s ease 0.2s;
+}
+.mohsen-projects-box:hover .icon {
+  top: 0;
+}
+.mohsen-projects-box .icon li {
+  display: block;
+}
+.mohsen-projects-box .icon li a {
+  display: block;
+  font-size: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.mohsen-projects-box .icon li a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .mohsen-projects {
+    padding: 70px 0px;
+  }
+  .mohsen-projects-images {
+    padding: 0px;
+    display: block;
+  }
+  .mohsen-projects-images a {
+    padding: 0;
+  }
+}

@@ -1,13 +1,27 @@
-body,html {
+body,
+html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #212121;
+  background-color: #000000;
   color: #bdbdbd;
   scroll-behavior: smooth;
+}
+body a:hover {
+  color: #00e932;
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+body i {
+  color: #03b42a;
+}
+a {
+  color: #bdbdbd;
 }
 .gray {
   color: #bdbdbd;
@@ -17,4 +31,25 @@ body,html {
 }
 .blu {
   color: #03a9f4;
+}
+.green {
+  color: #00e932;
+}
+.background-green {
+  background-color: #00e932;
+}
+@media screen and (max-width: 990px) {
+  ul {
+    padding: 0;
+  }
+  li,
+  p {
+    font-size: 11px !important;
+    text-align: unset !important;
+  }
+  h2,
+  h5 {
+    font-size: 17px !important;
+    text-align: unset !important;
+  }
 }

@@ -1,6 +1,6 @@
 .terminal {
   border: 1px solid #00e932;
-  position: relative;
+  /* position: relative; */
   transition: 0.4s;
   z-index: 99;
   background-color: #212121;
