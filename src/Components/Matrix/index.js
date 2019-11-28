@@ -6,7 +6,7 @@ let w = window.innerWidth;
 const timesMatrix = () => {
   const matrix = [];
   var i;
-  for (i = 0; i < w / 30; i++) {
+  for (i = 0; i < w / 100; i++) {
     const fontSize = _.random(10, 40);
     matrix.push(
       <pre

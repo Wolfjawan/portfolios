@@ -8,10 +8,10 @@ class TopPage extends Component {
   UNSAFE_componentWillMount() {
     setTimeout(() => {
       this.setState({ text: true, lMatrix: false });
-    }, 5000);
+    }, 3000);
     setTimeout(() => {
       this.setState({ message: true, text: false });
-    }, 9000);
+    }, 5500);
   }
   render() {
     const { text, message, lMatrix } = this.state;
