@@ -60,6 +60,27 @@ class Navbar extends React.Component {
                 CONTACT
               </a>
             </li>
+            <span
+              onClick={() =>
+                this.props.darkModeHandler(
+                  this.props.faceMode === "dark" ? "white" : "dark"
+                )
+              }
+              className="pointer"
+              style={{ padding: "3px" }}
+            >
+              {this.props.faceMode === "dark" ? (
+                <i
+                  className="fas fa-sun"
+                  style={{ color: "#fff", fontSize: "35px" }}
+                />
+              ) : (
+                <i
+                  className="fas fa-moon"
+                  style={{ color: "#fff", fontSize: "35px" }}
+                />
+              )}
+            </span>
           </ul>
         </div>
       </nav>

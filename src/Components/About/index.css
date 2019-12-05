@@ -12,8 +12,6 @@
 .about-mohsen h2 {
   text-align: justify;
   padding-left: 10px;
-  border-left: 6px solid #00e932;
-  border-bottom: 0.1px solid #00e9322a;
 }
 .about-mohsen-images {
   width: 100%;
@@ -21,11 +19,13 @@
   display: flex;
   justify-content: space-between;
 }
+.about-mohsen-images img {
+  border: 1px solid #000000 !important;
+}
 .about-mohsen-images a {
   width: 100%;
   padding: 0 20px 20px 20px;
   cursor: zoom-in;
-  opacity: 0.75;
 }
 .about-mohsen-images a:hover {
   opacity: 1;

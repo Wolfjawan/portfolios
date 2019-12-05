@@ -11,6 +11,7 @@ class projects extends Component {
             <img src={CYF_Dashboard} alt="CODEYOURFUTURE - ADMIN DASHBOARD" />
             <span>
               <a
+                style={{ ...this.props.aStyle }}
                 href="http://dashboard.codeyourfuture.io/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -19,7 +20,7 @@ class projects extends Component {
               </a>
               <ul>
                 <li>
-                  <i class="fab fa-js-square"></i> - JavaScript
+                  <i className="fab fa-js-square"></i> - JavaScript
                 </li>
                 <li>
                   <i className="fab fa-html5"></i> - HTML - Front-end
@@ -43,16 +44,17 @@ class projects extends Component {
                   <i className="fab fa-node-js"></i> - Express
                 </li>
                 <li>
-                  <i class="fas fa-smile-wink"></i> - JWT - Token
+                  <i className="fas fa-smile-wink"></i> - JWT - Token
                 </li>
                 <li>
-                  <i class="fas fa-database"></i> - Mongo-DB - Database
+                  <i className="fas fa-database"></i> - Mongo-DB - Database
                 </li>
               </ul>
             </span>
             <ul className="icon">
               <li>
                 <a
+                  style={{ ...this.props.aStyle }}
                   href="http://dashboard.codeyourfuture.io/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -62,6 +64,7 @@ class projects extends Component {
               </li>
               <li>
                 <a
+                  style={{ ...this.props.aStyle }}
                   href="https://github.com/CodeYourFuture/dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -81,6 +84,7 @@ class projects extends Component {
             />
             <span>
               <a
+                style={{ ...this.props.aStyle }}
                 href="https://application-process.codeyourfuture.io/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,7 +93,7 @@ class projects extends Component {
               </a>
               <ul>
                 <li>
-                  <i class="fab fa-js-square"></i> - JavaScript
+                  <i className="fab fa-js-square"></i> - JavaScript
                 </li>
                 <li>
                   <i className="fab fa-html5"></i> - HTML - Front-end
@@ -113,16 +117,17 @@ class projects extends Component {
                   <i className="fab fa-node-js"></i> - Express
                 </li>
                 <li>
-                  <i class="fas fa-smile-wink"></i> - JWT - Token
+                  <i className="fas fa-smile-wink"></i> - JWT - Token
                 </li>
                 <li>
-                  <i class="fas fa-database"></i> - Mongo-DB - Database
+                  <i className="fas fa-database"></i> - Mongo-DB - Database
                 </li>
               </ul>
             </span>
             <ul className="icon">
               <li>
                 <a
+                  style={{ ...this.props.aStyle }}
                   href="https://application-process.codeyourfuture.io/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -132,6 +137,7 @@ class projects extends Component {
               </li>
               <li>
                 <a
+                  style={{ ...this.props.aStyle }}
                   href="https://github.com/CodeYourFuture/application-process"
                   target="_blank"
                   rel="noopener noreferrer"

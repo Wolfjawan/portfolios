@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Terminal from "../terminal";
 import "./index.css";
 let h = window.innerHeight;
 let w = window.innerWidth;
@@ -25,64 +26,60 @@ class TopPage extends Component {
         : "20px 10px 0 10px";
     return (
       <div
-        className="flex"
+        className="flex top-page"
         id="top-page"
         style={{
           height: `${h}px`,
           padding
         }}
       >
-        <div
-          className="terminal"
+        <Terminal
+          {...this.props}
+          link="Terminal: home/mohsen"
           style={{
             height: terminalHeight,
             width: terminalWidth
           }}
-        >
-          <div className="terminal-nav">
-            <p className="ml-2 text-success">Terminal: home/mohsen</p>
-            <div className="terminal-nav-items">
-              <i className="fas fa-window-minimize text-success"></i>
-              <i className="far fa-window-maximize text-success"></i>
-              <i className="fas fa-window-close text-danger"></i>
-            </div>
-          </div>
-          {lMatrix && (
-            <div className="first-message-container">
-              <h4>
-                Loading Matrix...[<span className="text-success"> OK </span>
-                ]...
-              </h4>
-            </div>
-          )}
-          {text && (
-            <div className="first-message-container">
-              <h4>
-                Loading Mohsen...[<span className="text-success"> OK </span>
-                ]...
-              </h4>
-            </div>
-          )}
-          {message && (
-            <div className="second-message-container">
-              <h3>
-                Hello, this is
-                <a href="#about" className="text-success font-weight-bold">
-                  {" "}
-                  Mohsen Moradi
-                </a>
-                .
-                <br /> He is a full-stock web-developer.
-              </h3>
-              <span className="view-work-btn">
-                <a href="#about" className="btn btn-outline-success btn-lg">
-                  View Mohsen Moradi
-                  <i className="fas fa-arrow-down pl-2" />
-                </a>
-              </span>
+          Component={() => (
+            <div>
+              {lMatrix && (
+                <div className="first-message-container">
+                  <h4>
+                    Loading Matrix...[<span className="text-success"> OK </span>
+                    ]...
+                  </h4>
+                </div>
+              )}
+              {text && (
+                <div className="first-message-container">
+                  <h4>
+                    Loading Mohsen...[<span className="text-success"> OK </span>
+                    ]...
+                  </h4>
+                </div>
+              )}
+              {message && (
+                <div className="second-message-container">
+                  <h3>
+                    Hello, this is
+                    <a href="#about" className="text-success font-weight-bold">
+                      {" "}
+                      Mohsen Moradi
+                    </a>
+                    .
+                    <br /> He is a full-stock web-developer.
+                  </h3>
+                  <span className="view-work-btn">
+                    <a href="#about" className="btn btn-outline-success btn-lg">
+                      View Mohsen Moradi
+                      <i className="fas fa-arrow-down pl-2" />
+                    </a>
+                  </span>
+                </div>
+              )}
             </div>
           )}
-        </div>
+        />
       </div>
     );
   }

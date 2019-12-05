@@ -9,17 +9,17 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <About />
-        <hr className="background-green" />
-        <Experience />
-        <hr className="background-green" />
-        <Projects />
-        <hr className="background-green" />
-        <Skills />
-        <hr className="background-green" />
-        <Education />
-        <hr className="background-green" />
-        <Contact />
+        <About {...this.props} />
+        <hr style={this.props.hrStyle} />
+        <Experience {...this.props} />
+        <hr style={this.props.hrStyle} />
+        <Projects {...this.props} />
+        <hr style={this.props.hrStyle} />
+        <Skills {...this.props} />
+        <hr style={this.props.hrStyle} />
+        <Education {...this.props} />
+        <hr style={this.props.hrStyle} />
+        <Contact {...this.props} />
       </div>
     );
   }

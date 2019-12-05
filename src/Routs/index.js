@@ -8,7 +8,7 @@ class Routs extends Component {
     return (
       <Router>
         <Switch>
-          <Layout exact path="/" component={Home} />
+          <Layout exact path="/" component={Home} {...this.props} />
           <Route component={NotFound} />
         </Switch>
       </Router>

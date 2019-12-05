@@ -13,7 +13,7 @@ const divideLettersToSpans = element => {
       .split("")
       .map((l, i) => {
         if (l === " ") l = "&nbsp;";
-        return `<span class="anim-${i}"><h1>${l}</h1></span>`;
+        return `<span className="anim-${i}"><h1>${l}</h1></span>`;
       })
       .join("");
   }

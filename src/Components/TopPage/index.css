@@ -1,22 +1,4 @@
-.terminal {
-  border: 1px solid #00e932;
-  transition: 0.4s;
-  z-index: 99;
-  background-color: #212121;
-}
-.terminal-nav {
-  border-bottom: 1px solid #00e932;
-  height: 25px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.terminal-nav-items {
-  width: 70px;
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-}
+
 .first-message-container {
   width: fit-content;
   height: 40px;
@@ -25,7 +7,6 @@
 }
 
 .first-message-container h4 {
-  color: #bdbdbd;
   font-family: "Courier New", Courier, monospace !important;
   width: fit-content;
   display: flex;
@@ -50,11 +31,9 @@
   animation: paddingBottom 2s forwards;
 }
 .second-message-container h3 {
-  color: #bdbdbd;
   width: 100%;
   overflow: hidden;
   letter-spacing: 0.15em;
-  color: #bdbdbd !important;
   word-break: normal;
 }
 .view-work-btn {

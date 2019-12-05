@@ -6,12 +6,10 @@ html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
-  color: #bdbdbd;
   scroll-behavior: smooth;
 }
 body a:hover {
-  color: #00e932;
+  color: #00e932 !important;
   text-decoration: none;
 }
 body li {
@@ -19,9 +17,6 @@ body li {
 }
 body i {
   color: #03b42a;
-}
-a {
-  color: #bdbdbd;
 }
 .gray {
   color: #bdbdbd;
@@ -35,8 +30,8 @@ a {
 .green {
   color: #00e932;
 }
-.background-green {
-  background-color: #00e932;
+.pointer {
+  cursor: pointer;
 }
 @media screen and (max-width: 990px) {
   ul {

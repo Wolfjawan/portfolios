@@ -18,6 +18,9 @@
   display: flex;
   justify-content: space-between;
 }
+.mohsen-projects-images li {
+  color: #e7e7e7 !important;
+}
 
 .mohsen-projects-box img,
 .mohsen-projects-box:after,
@@ -36,6 +39,9 @@
 }
 .mohsen-projects-box {
   overflow: hidden;
+}
+.mohsen-projects-box img {
+  border: 1px solid #000000;
 }
 .mohsen-projects-box span {
   letter-spacing: 1px;
