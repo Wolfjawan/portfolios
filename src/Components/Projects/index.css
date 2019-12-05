@@ -18,7 +18,8 @@
   display: flex;
   justify-content: space-between;
 }
-.mohsen-projects-images li {
+.mohsen-projects-images li,
+.mohsen-projects-images h5 {
   color: #e7e7e7 !important;
 }
 
