@@ -13,7 +13,7 @@ class About extends Component {
           {...this.props}
           link="Terminal: home/mohsen/about"
           Component={() => (
-            <div>
+            <div className="container">
               <h1>ABOUT</h1>
               <hr style={this.props.hrStyle} />
               <div>

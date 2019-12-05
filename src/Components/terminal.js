@@ -21,8 +21,6 @@ export default ({
         <i className="fas fa-window-close text-danger"></i>
       </div>
     </div>
-    <div className="container">
       <Component {...props} />
-    </div>
   </div>
 );
