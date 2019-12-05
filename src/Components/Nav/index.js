@@ -11,52 +11,99 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
-        <button
+      <nav
+        className="navbar navbar-expand-lg navbar-dark"
+        style={this.props.navbarStyle}
+        id="navbar"
+      >
+        <span
           className="navbar-toggler"
-          type="button"
           data-toggle="collapse"
           data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={{ border: `1px solid ${this.props.aStyle.color}` }}
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          <i
+            className="fas fa-bars"
+            style={{ fontSize: "35px", ...this.props.aStyle }}
+          ></i>
+        </span>
+        <span
+          onClick={() =>
+            this.props.darkModeHandler(
+              this.props.faceMode === "dark" ? "white" : "dark"
+            )
+          }
+          className="pointer display-mode-media"
+          style={{ padding: "3px" }}
+        >
+          {this.props.faceMode === "dark" ? (
+            <i
+              className="fas fa-sun"
+              style={{ color: "#fff", fontSize: "35px" }}
+            />
+          ) : (
+            <i
+              className="fas fa-moon"
+              style={{ color: "#000", fontSize: "35px" }}
+            />
+          )}
+        </span>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav container">
+          <ul
+            className="navbar-nav container"
+            style={this.props.navbarNavStyle}
+          >
             <li className="nav-item active">
-              <a className="nav-link" href="#top-page">
+              <a
+                style={this.props.aStyle}
+                className="nav-link"
+                href="#top-page"
+              >
                 HOME <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#about">
+              <a style={this.props.aStyle} className="nav-link" href="#about">
                 ABOUT
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#experience">
+              <a
+                style={this.props.aStyle}
+                className="nav-link"
+                href="#experience"
+              >
                 EXPERIENCE
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#projects">
+              <a
+                style={this.props.aStyle}
+                className="nav-link"
+                href="#projects"
+              >
                 PROJECTS
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#skills">
+              <a style={this.props.aStyle} className="nav-link" href="#skills">
                 SKILLS
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#education">
+              <a
+                style={this.props.aStyle}
+                className="nav-link"
+                href="#education"
+              >
                 EDUCATION
               </a>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" href="#contact">
+              <a style={this.props.aStyle} className="nav-link" href="#contact">
                 CONTACT
               </a>
             </li>
@@ -66,7 +113,7 @@ class Navbar extends React.Component {
                   this.props.faceMode === "dark" ? "white" : "dark"
                 )
               }
-              className="pointer"
+              className="pointer display-mode-desktop"
               style={{ padding: "3px" }}
             >
               {this.props.faceMode === "dark" ? (
@@ -77,7 +124,7 @@ class Navbar extends React.Component {
               ) : (
                 <i
                   className="fas fa-moon"
-                  style={{ color: "#fff", fontSize: "35px" }}
+                  style={{ color: "#000", fontSize: "35px" }}
                 />
               )}
             </span>

@@ -5,8 +5,6 @@
   position: relative;
   width: 100%;
   top: 0;
-  border-bottom: 2px solid #02a525;
-  background-color: #181818;
 }
 .nav-link:hover,
 .navbar-brand:hover {
@@ -14,10 +12,16 @@
 }
 .navbar-nav {
   width: 100%;
-  border-left: 6px solid #00e932;
+  height: 38px;
 }
 .navbar-nav span {
   margin-left: auto;
+}
+.display-mode-desktop {
+  display: block;
+}
+.display-mode-media {
+  display: none;
 }
 @media screen and (max-width: 990px) {
   .navbar {
@@ -25,8 +29,15 @@
   }
   .navbar-nav {
     padding-left: 10px;
+    height: auto;
   }
   .nav-link {
     font-size: 20px !important;
+  }
+  .display-mode-desktop {
+    display: none;
+  }
+  .display-mode-media {
+    display: block;
   }
 }

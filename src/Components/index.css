@@ -14,3 +14,8 @@
   justify-content: space-between;
   margin: 5px;
 }
+@media screen and (max-width: 990px) {
+    .terminal-nav p{
+        font-size: 15px !important;
+      }
+  }
