@@ -27,7 +27,7 @@ class Navbar extends React.Component {
         >
           <i
             className="fas fa-bars"
-            style={{ fontSize: "35px", ...this.props.aStyle }}
+            style={{ fontSize: "25px", ...this.props.aStyle }}
           ></i>
         </span>
         <span
@@ -37,17 +37,17 @@ class Navbar extends React.Component {
             )
           }
           className="pointer display-mode-media"
-          style={{ padding: "3px" }}
+          style={{ padding: "3px 3px 0 0" }}
         >
           {this.props.faceMode === "dark" ? (
             <i
               className="fas fa-sun"
-              style={{ color: "#fff", fontSize: "35px" }}
+              style={{ color: "#fff", fontSize: "25px" }}
             />
           ) : (
             <i
               className="fas fa-moon"
-              style={{ color: "#000", fontSize: "35px" }}
+              style={{ color: "#000", fontSize: "25px" }}
             />
           )}
         </span>
@@ -119,12 +119,12 @@ class Navbar extends React.Component {
               {this.props.faceMode === "dark" ? (
                 <i
                   className="fas fa-sun"
-                  style={{ color: "#fff", fontSize: "35px" }}
+                  style={{ color: "#fff", fontSize: "30px" }}
                 />
               ) : (
                 <i
                   className="fas fa-moon"
-                  style={{ color: "#000", fontSize: "35px" }}
+                  style={{ color: "#000", fontSize: "30px" }}
                 />
               )}
             </span>

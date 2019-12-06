@@ -18,15 +18,15 @@ class About extends Component {
               <hr style={this.props.hrStyle} />
               <div>
                 <h2 style={this.props.h2BorderStyle}>
-                  I would like to use the latest technology to solve real
+                  Hi would like to use the latest technology to solve real
                   problems in AI, Robotics and Health sector.
                 </h2>
                 <p>
-                  My fascination with technology was sparked when I was a child.
-                  I thought it would be a great idea to help one of my cousins
+                  His fascination with technology was sparked when hi was a child.
+                  Hi thought it would be a great idea to help one of his cousins
                   who was fixing electrical items like Radio cassette player and
-                  Game Consoles. Although it was dangerous, I still wanted to
-                  see how they worked. I find it really interesting how society
+                  Game Consoles. Although it was dangerous, hi still wanted to
+                  see how they worked. Hi find it really interesting how society
                   is affected by technology. The change is fast and getting
                   quicker. If you speak about fully autonomous AI robots that
                   can feel things, some people might ask - are you crazy, are

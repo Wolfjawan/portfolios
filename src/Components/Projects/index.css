@@ -126,7 +126,13 @@
     padding: 0px;
     display: block;
   }
+  .mohsen-projects-box .icon {
+    padding: 3px;
+  }
   .mohsen-projects-images a {
     padding: 0;
+  }
+  .mohsen-projects-box .icon li a {
+    font-size: 35px;
   }
 }

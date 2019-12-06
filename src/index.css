@@ -39,12 +39,12 @@ body i {
   }
   li,
   p {
-    font-size: 11px !important;
+    font-size: 12px !important;
     text-align: unset !important;
   }
   h2,
   h5 {
-    font-size: 17px !important;
+    font-size: 15px !important;
     text-align: unset !important;
   }
 }

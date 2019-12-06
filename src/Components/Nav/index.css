@@ -5,6 +5,10 @@
   position: relative;
   width: 100%;
   top: 0;
+  padding: 3px 10px;
+}
+.navbar-toggler {
+  border-radius: 0;
 }
 .nav-link:hover,
 .navbar-brand:hover {
