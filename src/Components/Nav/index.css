@@ -1,11 +1,11 @@
 .navbar {
-  transition: 0.4s;
   height: 40px;
   z-index: 99;
   position: relative;
   width: 100%;
   top: 0;
   padding: 3px 10px;
+  transition: 3s;
 }
 .navbar-toggler {
   border-radius: 0;

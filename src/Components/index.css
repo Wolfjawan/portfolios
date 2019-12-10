@@ -1,5 +1,5 @@
 .terminal {
-  transition: 0.4s;
+  transition: 3s;
   z-index: 99;
 }
 .terminal-nav {
@@ -15,7 +15,7 @@
   margin: 5px;
 }
 @media screen and (max-width: 990px) {
-    .terminal-nav p{
-        font-size: 15px !important;
-      }
+  .terminal-nav p {
+    font-size: 15px !important;
   }
+}

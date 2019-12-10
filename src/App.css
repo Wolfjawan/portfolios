@@ -1,4 +1,7 @@
-  .main {
-    position: relative;
-    width: 100%;
-  }
+.main {
+  position: relative;
+  width: 100%;
+}
+.main-container {
+  transition: 3s;
+}
