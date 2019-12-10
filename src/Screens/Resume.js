@@ -6,12 +6,15 @@ export default () => {
     <div
       className="container"
       style={{
+        position: "relative",
         margin: "30px auto",
         backgroundColor: "#f0f0f0"
       }}
     >
       <div className="d-flex justify-content-end">
-        <Link to="/" className="mt-2">Back</Link>
+        <Link to="/" className="mt-2">
+          Back
+        </Link>
       </div>
       <div className="markdown-body entry-content pl-5 pr-5">
         <h1>Mohsen Moradi</h1>
