@@ -18,22 +18,23 @@ class About extends Component {
               <hr style={this.props.hrStyle} />
               <div>
                 <h2 style={this.props.h2BorderStyle}>
-                  Hi would like to use the latest technology to solve real
+                  He would like to use the latest technology to solve real
                   problems in AI, Robotics and Health sector.
                 </h2>
                 <p>
-                  His fascination with technology was sparked when hi was a child.
-                  Hi thought it would be a great idea to help one of his cousins
-                  who was fixing electrical items like Radio cassette player and
-                  Game Consoles. Although it was dangerous, hi still wanted to
-                  see how they worked. Hi find it really interesting how society
-                  is affected by technology. The change is fast and getting
-                  quicker. If you speak about fully autonomous AI robots that
-                  can feel things, some people might ask - are you crazy, are
-                  you living in movies. We are living in the age where advances
-                  in computers and technology made possible what was once
-                  impossible. There are robots that can solve a Rubik's cube in
-                  a second.
+                  His fascination with technology was sparked when he was a
+                  child. He thought it would be a great idea to help one of his
+                  cousins who was fixing electrical items like Radio cassette
+                  player and Game Consoles. Although it was dangerous, he still
+                  wanted to open one and see how they work. He find it really
+                  interesting how society is affected by technology. The change
+                  is rapid and getting quicker. If you speak of a fully
+                  autonomous AI robots that can feel things, some people might
+                  ask - are you crazy, are you living in movies. We are living
+                  in the age where advances in computers and technology made
+                  possible what was once impossible. There are robots that can
+                  solve a Rubik's cube in a second. This was my dream to make
+                  the impossibles possible, so be it, here I come.
                 </p>
                 <hr style={this.props.hrStyle} />
                 <div className="about-mohsen-images">

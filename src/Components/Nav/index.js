@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { scrollAnimation } from "../Helpers";
 import "./index.css";
 
@@ -106,6 +106,11 @@ class Navbar extends React.Component {
               <a style={this.props.aStyle} className="nav-link" href="#contact">
                 CONTACT
               </a>
+            </li>
+            <li className="nav-item active">
+              <Link style={this.props.aStyle} className="nav-link" to="/resume">
+                RESUME
+              </Link>
             </li>
             <span
               onClick={() =>
