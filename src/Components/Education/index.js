@@ -12,7 +12,7 @@ class Education extends Component {
         id="education"
       >
         <Terminal
-        {...this.props}
+          {...this.props}
           link="Terminal: home/mohsen/education"
           Component={() => (
             <div className="container">
@@ -42,9 +42,10 @@ class Education extends Component {
                 </p>
                 <ul>
                   <li>Core programming using C#.</li>
-                  <li>
-                    Introduction to robotics, security, crypto and networking.
-                  </li>
+                  <li>Robotics.</li>
+                  <li>Security.</li>
+                  <li>Crypto.</li>
+                  <li>Networking.</li>
                   <li>Essential Web development.</li>
                 </ul>
               </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Routes from "./Routs";
 import { darkMode, whiteMode } from "./modesStyle";
-// import Matrix from "./Components/Matrix";
+import Matrix from "./Components/Matrix";
 import "./App.css";
 class App extends Component {
   state = {
@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Matrix /> */}
+        <Matrix />
         <Routes {...this.state} darkModeHandler={this.darkModeHandler} />
       </div>
     );
