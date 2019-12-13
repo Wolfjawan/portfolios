@@ -19,7 +19,6 @@ commands:
           aws cloudfront create-invalidation \
               --distribution-id << parameters.cf_distribution_id >> \
               --paths /\*
-
 jobs:
   build_production:
     docker:
@@ -50,7 +49,6 @@ jobs:
           command: sudo pip install awscli
       - s3deploy_production:
           to: "thisismohsen.com"
-          # need to work out
           cf_distribution_id: "E3HTCSXRJOQU3T"
           
 workflows:
