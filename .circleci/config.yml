@@ -1,0 +1,73 @@
+---
+version: 2.1
+commands:
+  s3deploy_production:
+    description: "Deploy to S3"
+    parameters:
+      to:
+        type: string
+      cf_distribution_id:
+        type: string
+    steps:
+      - run: |
+          aws configure set preview.cloudfront true
+      - run: |
+          aws s3 sync ./build s3://<< parameters.to >> \
+            --acl public-read --delete \
+            --cache-control max-age=31536000
+      - run: |
+          aws cloudfront create-invalidation \
+              --distribution-id << parameters.cf_distribution_id >> \
+              --paths /\*
+
+jobs:
+  build_production:
+    docker:
+      - image: circleci/node:12.6.0
+    working_directory: ~/portfolios
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/portfolios
+      - run: yarn
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths: build
+
+  deploy_production:
+    docker:
+      - image: circleci/python
+    working_directory: ~/build
+    environment:
+      PUBLIC_URL: https://thisismohsen.com
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/build
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+      - s3deploy_production:
+          to: "thisismohsen.com"
+          # need to work out
+          cf_distribution_id: ""
+          
+workflows:
+  version: 2
+  test_and_deploy:
+    jobs:
+      - build_production:
+          context: build
+          filters:
+            branches:
+              only:
+                - master
+      - deploy_production:
+          context: deployments
+          requires:
+            - build_production
+          filters:
+            branches:
+              only:
+                - master
