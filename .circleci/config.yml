@@ -63,7 +63,6 @@ workflows:
               only:
                 - master
       - deploy_production:
-          context: deployments
           requires:
             - build_production
           filters:
