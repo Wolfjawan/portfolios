@@ -58,7 +58,6 @@ workflows:
   test_and_deploy:
     jobs:
       - build_production:
-          context: build
           filters:
             branches:
               only:
