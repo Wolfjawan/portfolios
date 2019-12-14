@@ -48,7 +48,7 @@ jobs:
           name: Install awscli
           command: sudo pip install awscli
       - s3deploy_production:
-          to: "thisismohsen.com"
+          to: "thisismohsen"
           cf_distribution_id: "E3HTCSXRJOQU3T"
           
 workflows:
