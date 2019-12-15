@@ -16,6 +16,7 @@ pre {
   text-orientation: upright;
   transform: translatey(-100%);
   animation: matrix linear 100s infinite;
+  display: inline-table;
 }
 
 @keyframes matrix {

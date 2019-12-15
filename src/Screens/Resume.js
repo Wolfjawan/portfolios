@@ -16,7 +16,7 @@ export default () => {
           Back
         </Link>
       </div>
-      <div className="markdown-body entry-content pl-5 pr-5">
+      <div className="markdown-body entry-content">
         <h1>Mohsen Moradi</h1>
         <p>
           T: 07402120069 / E:{" "}
