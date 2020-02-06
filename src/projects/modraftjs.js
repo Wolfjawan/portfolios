@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   _convertContentStateToRawJS,
   EditorState,
@@ -19,13 +20,6 @@ class MoDraftJS extends Component {
     this.setState({ ...e });
   };
 
-  // componentDidMount() {
-  //   const { editorState } = this.state;
-  //   this.setState({
-  //     editorState: _convertFromRow(editorState, ExampleState.contentState)
-  //   });
-  // }
-
   render() {
     const { contentState, html, editorState } = this.state;
     return (
@@ -37,9 +31,15 @@ class MoDraftJS extends Component {
         }}
       >
         <div style={{ width: "90%" }}>
-          <div>
-            <button
-              onClick={() =>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <div />
+            <Link to="/">Back</Link>
+          </div>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <h2>Rich Text Editor</h2>
+            <span
+              style={{ cursor: "pointer" }}
+              onMouseDown={() =>
                 this.setState({
                   editorState: _convertFromRow(
                     editorState,
@@ -49,7 +49,7 @@ class MoDraftJS extends Component {
               }
             >
               Load Example
-            </button>
+            </span>
           </div>
           <div>
             <Editor
@@ -58,14 +58,22 @@ class MoDraftJS extends Component {
               onChangeHTML={this.onChangeHTML}
             />
           </div>
-          <h1> HTML state</h1>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: html
-            }}
-          />
-          <h1>Content State</h1>
-          <pre>{_convertContentStateToRawJS(contentState)}</pre>
+          {html && (
+            <div>
+              <h1> HTML state</h1>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: html
+                }}
+              />
+            </div>
+          )}
+          {_convertContentStateToRawJS(contentState) && (
+            <div>
+              <h1>Content State</h1>
+              <pre>{_convertContentStateToRawJS(contentState)}</pre>
+            </div>
+          )}
         </div>
       </div>
     );

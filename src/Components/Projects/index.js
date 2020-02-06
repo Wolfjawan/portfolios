@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Project from "./Project";
 import Terminal from "../terminal";
 import "./index.css";
@@ -19,6 +20,20 @@ class Projects extends Component {
                 <Project aStyle={aStyle} />
                 <h2 style={this.props.h2BorderStyle}>Other Projects</h2>
                 <ul>
+                  <li>
+                    <a
+                      style={{ ...aStyle, marginRight: "10px" }}
+                      href="https://github.com/Wolfjawan/modraftjs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github-square"></i> Rich text editor
+                      "modraftjs" based on draft.js
+                    </a>
+                    <Link style={{ ...aStyle }} to="/modraftjs">
+                      Demo
+                    </Link>
+                  </li>
                   <li>
                     <a
                       style={{ ...aStyle }}
