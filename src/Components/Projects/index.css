@@ -1,6 +1,16 @@
 .mohsen-projects {
   padding: 50px 0px;
 }
+.mohsen-projects a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.mohsen-projects li {
+  list-style: none;
+}
+.mohsen-projects i {
+  color: #03b42a;
+}
 .mohsen-projects h1 {
   padding-top: 15px;
   text-align: justify;

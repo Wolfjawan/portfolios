@@ -7,7 +7,16 @@
   right: 0;
   bottom: 0;
 }
-
+.Message-container a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.Message-container li {
+  list-style: none;
+}
+.Message-container i {
+  color: #03b42a;
+}
 .MessageWrapper {
   margin-top: 10px;
   width: fit-content;
@@ -18,7 +27,6 @@
   font-family: "Courier New", Courier, monospace !important;
   width: 100%;
   display: flex;
-  box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid rgb(41, 138, 248);

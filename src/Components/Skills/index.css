@@ -1,6 +1,16 @@
 .mohsen-skills {
   padding: 50px 0px;
 }
+.mohsen-skills a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.mohsen-skills li {
+  list-style: none;
+}
+.mohsen-skills i {
+  color: #03b42a;
+}
 .mohsen-skills li {
   font-size: 18px;
   text-align: justify;
