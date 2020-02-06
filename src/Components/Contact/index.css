@@ -1,6 +1,16 @@
 .mohsen-contact {
   padding: 50px 0px;
 }
+.mohsen-contact a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.mohsen-contact li {
+  list-style: none;
+}
+.mohsen-contact i {
+  color: #03b42a;
+}
 .mohsen-contact li {
   font-size: 18px;
   text-align: justify;

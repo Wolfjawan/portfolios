@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Navbar from "../Components/Nav";
 import TopPage from "../Components/TopPage";
+import Matrix from "../Components/Matrix";
 
 export default ({ component: Component, mainStyle, ...rest }) => (
   <Route
@@ -9,6 +10,7 @@ export default ({ component: Component, mainStyle, ...rest }) => (
     render={() => {
       return (
         <div className="main-container" style={mainStyle}>
+          <Matrix />
           <section
             style={{
               color: "#1b242f",

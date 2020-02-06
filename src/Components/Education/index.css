@@ -1,6 +1,16 @@
 .mohsen-education {
   padding: 50px 0px;
 }
+.mohsen-education a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.mohsen-education li {
+  list-style: none;
+}
+.mohsen-education i {
+  color: #03b42a;
+}
 .mohsen-education li {
   font-size: 18px;
   text-align: justify;

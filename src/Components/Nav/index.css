@@ -7,6 +7,16 @@
   padding: 3px 10px;
   transition: 3s;
 }
+.navbar a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar i {
+  color: #03b42a;
+}
 .navbar-toggler {
   border-radius: 0;
 }

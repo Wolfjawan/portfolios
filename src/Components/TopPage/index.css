@@ -5,12 +5,20 @@
   padding: 10px;
   animation: h-zero 0.01s forwards;
 }
-
+.first-message-container a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.first-message-container li {
+  list-style: none;
+}
+.first-message-container i {
+  color: #03b42a;
+}
 .first-message-container h4 {
   font-family: "Courier New", Courier, monospace !important;
   width: fit-content;
   display: flex;
-  box-sizing: border-box;
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid rgb(41, 138, 248);

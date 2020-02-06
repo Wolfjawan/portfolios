@@ -9,16 +9,6 @@ html {
   scroll-behavior: smooth;
   transition: 3s;
 }
-body a:hover {
-  color: #00e932 !important;
-  text-decoration: none;
-}
-body li {
-  list-style: none;
-}
-body i {
-  color: #03b42a;
-}
 .gray {
   color: #bdbdbd;
 }
@@ -34,6 +24,14 @@ body i {
 .pointer {
   cursor: pointer;
 }
+.main {
+  position: relative;
+  width: 100%;
+}
+.main-container {
+  transition: 3s;
+}
+
 @media screen and (max-width: 990px) {
   ul {
     padding: 0;

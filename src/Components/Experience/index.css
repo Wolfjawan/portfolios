@@ -1,6 +1,16 @@
 .mohsen-experience {
   padding: 50px 0px;
 }
+.mohsen-experience a:hover {
+  color: #00e932 !important;
+  text-decoration: none;
+}
+.mohsen-experience li {
+  list-style: none;
+}
+.mohsen-experience i {
+  color: #03b42a;
+}
 .mohsen-experience li {
   font-size: 18px;
   text-align: justify;
