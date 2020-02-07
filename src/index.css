@@ -31,7 +31,9 @@ html {
 .main-container {
   transition: 3s;
 }
-
+*, ::after, ::before {
+  box-sizing: unset !important;
+}
 @media screen and (max-width: 990px) {
   ul {
     padding: 0;
