@@ -67,7 +67,7 @@ class TopPage extends Component {
                       Mohsen Moradi
                     </a>
                     .
-                    <br /> He is a full-stock web-developer.
+                    <br /> He is a Full-stack web-developer.
                   </h3>
                   <span className="view-work-btn">
                     <a href="#about" className="btn btn-outline-success btn-lg">

@@ -1383,9 +1383,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "13.7.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.0.tgz#b417deda18cf8400f278733499ad5547ed1abec4"
-  integrity sha512-GnZbirvmqZUzMgkFn70c74OQpTTUcCzlhQliTzYjQMqg+hVKcDnxdL19Ne3UdYzdMA/+W3eb646FWn/ZaT1NfQ==
+  version "13.7.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.1.tgz#238eb34a66431b71d2aaddeaa7db166f25971a0d"
+  integrity sha512-Zq8gcQGmn4txQEJeiXo/KiLpon8TzAl0kmKH4zdWctPj05nWwp1ClMdAVEloqrQKfaC48PNLdgN/aVaLqUrluA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -6861,10 +6861,10 @@ mkdirp@0.5.1, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-modraftjs@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/modraftjs/-/modraftjs-0.1.11.tgz#84b3ab2d4e7f42daa199cc531540cec2ec77cbfc"
-  integrity sha512-kiyLoq/7BZO7kIH8UcfTozRZ+R3sElpbvU0tkocmzipvdLDnVtlmgELN2FRBNgc5wZYCQgVTL5c7vIuG4iqtTg==
+modraftjs@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/modraftjs/-/modraftjs-0.1.15.tgz#22588e92dcea30713d404a3b82d895d6ed7b6167"
+  integrity sha512-D+/cEf/jiwWMBXFsQ+NSYX2zMrkUuy/7PERp46OBurfo3Mekzd/splewRG5lvvvhCqejaPJKt3WYrlWkrX1hJQ==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.26"
     "@fortawesome/free-solid-svg-icons" "^5.8.2"

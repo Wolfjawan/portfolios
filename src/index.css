@@ -31,11 +31,8 @@ html {
 .main-container {
   transition: 3s;
 }
-*, ::after, ::before {
-  box-sizing: unset !important;
-}
-button, input {
-  font-size: unset;
+button {
+  font-size: small;
   line-height: normal;
 }
 @media screen and (max-width: 990px) {
