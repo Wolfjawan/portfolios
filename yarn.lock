@@ -6861,10 +6861,10 @@ mkdirp@0.5.1, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-modraftjs@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/modraftjs/-/modraftjs-0.1.10.tgz#976f2e20a4372f6cbe3220aacdb43229b655f7fe"
-  integrity sha512-x9yaSJWQt0ApPF/k1OhRjq1mYEGaVapSdCWNOFE5l14VaP2XCJ0SpmamwdxNUsXaCPbyILa1iVVPzvV6jDKFAA==
+modraftjs@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/modraftjs/-/modraftjs-0.1.11.tgz#84b3ab2d4e7f42daa199cc531540cec2ec77cbfc"
+  integrity sha512-kiyLoq/7BZO7kIH8UcfTozRZ+R3sElpbvU0tkocmzipvdLDnVtlmgELN2FRBNgc5wZYCQgVTL5c7vIuG4iqtTg==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.26"
     "@fortawesome/free-solid-svg-icons" "^5.8.2"
