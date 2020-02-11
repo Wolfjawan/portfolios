@@ -34,6 +34,10 @@ html {
 *, ::after, ::before {
   box-sizing: unset !important;
 }
+button, input {
+  font-size: unset;
+  line-height: normal;
+}
 @media screen and (max-width: 990px) {
   ul {
     padding: 0;
