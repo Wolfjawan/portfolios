@@ -41,7 +41,7 @@ class TopPage extends Component {
             width: terminalWidth
           }}
           Component={() => (
-            <div>
+            <>
               {lMatrix && (
                 <div className="first-message-container">
                   <h4>
@@ -69,15 +69,13 @@ class TopPage extends Component {
                     .
                     <br /> He is a Full-stack web-developer.
                   </h3>
-                  <span className="view-work-btn">
-                    <a href="#about" className="btn btn-outline-success btn-lg">
-                      View Mohsen Moradi
-                      <i className="fas fa-arrow-down pl-2" />
-                    </a>
-                  </span>
+                  <a href="#about" className="btn-lg">
+                    View Mohsen Moradi
+                    <i className="fas fa-arrow-down pl-2" />
+                  </a>
                 </div>
               )}
-            </div>
+            </>
           )}
         />
       </div>
