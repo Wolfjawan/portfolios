@@ -33,6 +33,8 @@ jobs:
       - persist_to_workspace:
           root: .
           paths: build
+    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
+    resource_class: large
 
   deploy_production:
     docker:
@@ -50,7 +52,7 @@ jobs:
       - s3deploy_production:
           to: "thisismohsen"
           cf_distribution_id: "E3HTCSXRJOQU3T"
-          
+
 workflows:
   version: 2
   test_and_deploy:
